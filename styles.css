@@ -4,14 +4,24 @@
 }
 
 * {
-    font-family: Monocraft, 'Embedded Monocraft', Arial, sans-serif;
+    font-family: Monocraft, 'Embedded Monocraft', "Times New Roman", sans-serif;
 }
 
 body {
     background-color: dimgray;
+    padding: 1em;
+}
+
+.bg-dark-gray {
+    background-color: gray;
 }
 
 h1 {
     color: rebeccapurple;
     text-align: center;
+}
+
+li {
+    list-style-type: none;
+    display: inline-block;
 }
