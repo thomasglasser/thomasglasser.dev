@@ -10,55 +10,152 @@
     </head>
     <body>
         <header>
-            <nav class="navbar navbar-expand-lg bg-dark-gray">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="#">Thomas Glasser</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <nav class="navbar navbar-expand-lg fixed-top">
+                <div class="container">
+                    <a class="navbar-brand monocraft" href="#">Thomas Glasser</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <div id="nav" class="collapse navbar-collapse justify-content-end">
+                        <ul class="navbar-nav">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                <a class="nav-link monocraft" href="#about">About</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="about.html">About</a>
+                                <a class="nav-link monocraft" href="#experience">Experience</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Projects</a>
+                                <a class="nav-link monocraft" href="#projects">Projects</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link monocraft" href="#skills">Skills</a>
                             </li>
                         </ul>
                     </div>
                 </div>
             </nav>
         </header>
+        <section id="hero" class="hero">
+            <div class="container">
+                <img src="headshot.jpg" alt="My professional headshot">
+                <h2 class="monocraft">Hello, my name is Thomas Glasser.</h2>
+                <p class="lead">I am a Computer Science Student at the University of Florida</p>
+            </div>
+        </section>
         <section id="about">
-            <h1>About Me</h1>
-            <div id="description" class="d-flex">
-                <p>
-                    Hello! My name is Thomas Glasser,
-                    and I am a Computer Science major at the University of Florida's College of Engineering.
-                    I am very interested in game development and I make Minecraft mods!
-                </p>
-                <img id="me" src="me.jpg" alt="A picture of me at UF in front of flowering bushes" height=256 width=256>
+            <div class="container section-content">
+                <h1 class="section-title">About Me</h1>
+                <div class="card-dark">
+                    <p>
+                        Hi! My name is Thomas Glasser,
+                        and I am a Computer Science major at the University of Florida's College of Engineering.
+                        I am very interested in game development and I make Minecraft mods!
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section id="experience">
+            <div class="container section-content">
+                <h2 class="section-title">Experience</h2>
+                <div class="card-dark">
+                    <h5>University of Florida</h5>
+                    <h6 class="fst-italic">Student Transition and Retention (STAR) Mentor</h6>
+                    <p>May 2025 – Present</p>
+                    <br>
+                    <p>Worked in a team of 6 full-time and 2 part-time mentors for 28 incoming freshman students</p>
+                    <p>Enhanced study techniques, time management, goal setting, exam preparation, and other competencies that are proven to boost classroom success</p>
+                    <p>Guided students in pursuing opportunities like studying abroad, pursuing internships, engaging in research, organizational leadership, and preparing for post-college careers</p>
+                    <p>Supported students in adapting to UF life, fostering personal development, emotional intelligence, interpersonal skills, self-efficacy, confidence, and overall well-being</p>
+                </div>
+                <div class="card-dark">
+                    <h5>Self-Employed Software Developer</h5>
+                    <p>March 2022 – August 2024</p>
+                    <br>
+                    <p>Programmed Minecraft game modifications based on loose concepts and designs</p>
+                    <p>Performed bug testing and feature adjustments based on client feedback</p>
+                    <p>5-star rating with 18 reviews</p>
+                </div>
+                <div class="card-dark">
+                    <h5>Whataburger</h5>
+                    <h6 class="fst-italic">Team Member</h6>
+                    <p>November 2022 – May 2024</p>
+                    <br>
+                    <p>Communicated and resolved issues with customers and coworkers</p>
+                    <p>Carried boxes, trash, and heavy equipment</p>
+                    <p>Calculated costs, handling cash and card transactions</p>
+                </div>
             </div>
         </section>
         <section id="projects">
-            <h1>Projects</h1>
+            <div class="container section-content">
+                <h2 class="section-title">Projects</h2>
+                <div class="card-dark">
+                    <h5>Mineraculous | Java</h5>
+                    <h6 class="fst-italic">Unreleased</h6>
+                    <div class="container">
+                        <p>
+                            <a href="https://github.com/thomasglasser/Mineraculous" class="bi bi-github"> Source</a> •
+                            <a href="https://mineraculous.wiki.thomasglasser.dev/" class="bi bi-book"> Wiki</a>
+                        </p>
+                    </div>
+                    <p>Led a team of 3 developers and 6 designers to implement elements of the Miraculous television show into modern Minecraft using the NeoForge modding API</p>
+                    <p>Added features including JSON-defined magic jewels, transformations, powers, and advanced user customization</p>
+                    <p>Focused on building clean, efficient, and customizable features and APIs</p>
+                    <p>Free and Open Source, licensed by GNU Lesser General Public License v3.0</p>
+                </div>
+                <div class="card-dark">
+                    <h5>Minejago | Java</h5>
+                    <h6 class="fst-italic">Unreleased</h6>
+                    <div class="container">
+                        <p>
+                            <a href="https://github.com/thomasglasser/Minejago" class="bi bi-github"> Source</a> •
+                            <a href="https://minejago.wiki.thomasglasser.dev/" class="bi bi-book"> Wiki</a>
+                        </p>
+                    </div>
+                    <p>Led a team of 1 developer and 5 designers to implement elements of the Ninjago television show into modern Minecraft using the NeoForge modding API</p>
+                    <p>Added features including JSON-defined elements and a focus mechanic with a JSON-driven meditation system</p>
+                    <p>Focused on building clean, efficient, and customizable features and APIs</p>
+                    <p>Free and Open Source, licensed by GNU Lesser General Public License v3.0</p>
+                </div>
+                <div class="card-dark">
+                    <h5>Sherds API | Java</h5>
+                    <div class="container">
+                        <p>
+                            <a href="https://github.com/thomasglasser/Sherds-API" class="bi bi-github"> Source</a> •
+                            <a href="https://modrinth.com/mod/sherdsapi" class="bi bi-download"> Download</a> •
+                            <a href="https://github.com/thomasglasser/Sherds-API/wiki" class="bi bi-book"> Wiki</a>
+                        </p>
+                    </div>
+                    <p>Developed an API for adding new Pottery Sherd variants to modern Minecraft with only a texture file</p>
+                    <p>Compatible with the NeoForge, Fabric, and Quilt modding APIs</p>
+                    <p>1.37M downloads</p>
+                    <p>Free and Open Source, licensed by GNU Lesser General Public License v3.0</p>
+                </div>
+            </div>
+            <section id="skills">
+                <div class="container section-content">
+                    <h2 class="section-title">Technical Skills</h2>
+                    <div class="card-dark">
+                        <ul>
+                            <li><strong>Languages:</strong> Java, JSON, Python, C++, HTML, CSS, TypeScript, JavaScript</li>
+                            <li><strong>Developer Tools:</strong> Git, GitHub, IntelliJ IDEA, CLion, PyCharm, WebStorm, Unity</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
         </section>
-        <footer class="d-flex">
-            <p> &copy; Thomas Glasser 2025. All Rights Reserved. </p>
-            <ul class="ms-auto">
-                <li>
-                    <a href="mailto:thomas@thomasglasser.dev" class="bi bi-envelope-at" style="color: black"></a>
-                </li>
-                <li>
-                    <a href="https://github.com/thomasglasser" target="_blank" class="bi bi-github" style="color: black"></a>
-                </li>
-                <li>
-                    <a href="https://www.linkedin.com/in/thomas-glasser/" target="_blank" class="bi bi-linkedin" style="color: black"></a>
-                </li>
-            </ul>
-        </footer>
+
+            <footer>
+                <div class="container">
+                    <p>
+                        &copy; 2025 Thomas Glasser •
+                        <a href="mailto:thomas@thomasglasser.dev" class="bi bi-envelope"> Email</a> •
+                        <a href="https://github.com/thomasglasser" class="bi bi-github"> GitHub</a> •
+                        <a href="https://linkedin.com/in/thomasglasser" class="bi bi-linkedin"> LinkedIn</a>
+                    </p>
+                </div>
+            </footer>
+
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     </body>
 </html>

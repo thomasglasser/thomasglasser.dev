@@ -3,25 +3,83 @@
     src: url(./Monocraft.ttf) format('truetype'), url(./Monocraft.otf) format('opentype');
 }
 
-* {
-    font-family: Monocraft, 'Embedded Monocraft', "Times New Roman", sans-serif;
+.monocraft {
+    font-family: Monocraft, 'Embedded Monocraft', "Georgia", sans-serif;
 }
 
 body {
-    background-color: dimgray;
-    padding: 1em;
+    background-color: #0d1117;
+    color: #c9d1d9;
+    font-family: "Georgia", sans-serif;
 }
 
-.bg-dark-gray {
-    background-color: gray;
+a {
+    color: #58a6ff;
+    text-decoration: none;
 }
 
-h1 {
-    color: rebeccapurple;
+nav {
+    background-color: #161b22;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+}
+
+.navbar-brand, .nav-link {
+    color: #c9d1d9 !important;
+    font-weight: 500;
+}
+
+.nav-link:hover {
+    color: #58a6ff !important;
+}
+
+section {
+    padding: 40px 0;
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: 30% 25%;
+    border: 3px solid #30363d;
+    box-shadow: 0 0 10px rgba(88,166,255,0.1);
+    margin-bottom: 20px;
+}
+
+.section-title {
+    font-family: Monocraft, 'Embedded Monocraft', "Georgia", sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 40px;
     text-align: center;
 }
 
-li {
-    list-style-type: none;
-    display: inline-block;
+.section-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.card-dark {
+    background-color: #161b22;
+    border: 1px solid #30363d;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+footer {
+    background-color: #161b22;
+    text-align: center;
+    padding: 30px 0;
+    color: #8b949e;
+    font-size: 0.9rem;
+    border-top: 1px solid #30363d;
 }
