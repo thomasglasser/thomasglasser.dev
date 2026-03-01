@@ -52,6 +52,10 @@ section {
     margin-bottom: 20px;
 }
 
+.social-links {
+    font-size: 2rem;
+}
+
 .section-title {
     font-family: Monocraft, 'Embedded Monocraft', "Georgia", sans-serif;
     font-size: 2rem;
